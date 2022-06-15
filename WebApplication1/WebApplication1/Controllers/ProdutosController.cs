@@ -8,11 +8,13 @@ using WebApplication1.Interfaces;
 using AutoMapper;
 using WebApplication1.DTOs;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class ProdutosController : Controller
     {
         

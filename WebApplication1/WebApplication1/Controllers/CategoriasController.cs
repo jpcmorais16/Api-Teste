@@ -9,11 +9,13 @@ using WebApplication1.Repositories;
 using AutoMapper;
 using WebApplication1.DTOs;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplication1.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    
     public class CategoriasController : ControllerBase
     {
         private readonly IUnitOfWork _uow;
